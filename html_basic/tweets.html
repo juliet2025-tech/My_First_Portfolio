@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tweets</title>
+    <style>
+        /* Simple styling to make the "tweet" look like a real embed */
+        .tweet {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 500px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f8fa;
+            margin-bottom: 10px;
+        }
+        .tweet-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .tweet-content {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,7 +35,10 @@
     <main>
         <article>
             <h1>My Tweets</h1>
-            <p>Here is my first tweet: "Learning HTML and building my portfolio with ALX is fun!"</p>
+            <div class="tweet">
+                <p class="tweet-author">@Juliet</p>
+                <p class="tweet-content">Learning HTML and building my portfolio with ALX is fun!</p>
+            </div>
         </article>
 
         <aside>
@@ -29,5 +51,6 @@
     </footer>
 </body>
 </html>
+
 
 
